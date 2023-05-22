@@ -1,0 +1,214 @@
+:root{
+    --heart:"M150 71.7383C117.2 15.0876 25 31.6301 25 102.603C25 149.321 79.3125 199.513 141.288 259.876C143.713 262.246 146.863 263.425 150 263.425C153.137 263.425 156.287 262.246 158.712 259.876C220.925 199.287 275 149.334 275 102.603C275 31.3918 182.55 15.514 150 71.7383Z"; 
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fff;
+}
+.top{
+    /* display: flex; */
+    position: relative;
+    left: 45%;
+    font-size: 25px;
+    /* padd50px; */
+}
+.container{
+   width:  100%;
+   height: 90vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   z-index: 2;
+   background: rgb(255, 255, 255);
+}
+.main{
+    display: flex;
+    flex-direction:  column;
+    justify-content:space-between;
+    align-items:center;
+    position: relative;
+    left: 300px;
+    bottom: 00px;
+    height: 70%;
+    width: 80%;
+    z-index: 2;
+    background-color: rgb(255, 255, 255);
+    /* border-style: double; */
+}
+.main-upper{
+    position: relative; 
+    display: flex;
+    flex-direction:  column;
+    justify-content:space-between;
+    align-items:center;
+    width: 80%;
+    bottom: 5px;
+    background-color: #fff;
+    border-style: solid;
+    border-color: rgb(161, 166, 164);
+    box-shadow: 2px 2px 3px 0px rgb(178, 180, 179);
+    border-radius: 20px;
+}
+#main-lower{
+    width: 300px;
+    height: 300px;
+    z-index: 0;
+    opacity: 0;
+    overflow: hidden;
+    position: relative;
+    top: 80px;
+    right: 5px;
+    border-style: none;
+}
+input[type="file"]{
+     color: transparent;
+     position: relative;
+     left: 70px;
+}
+input[type="file"]::file-selector-button{
+    height: 50px;
+    width: 120px;
+    background: #007c61;
+    border-radius: 40px;
+    color:#fff;
+    font-weight: 600;
+    font-size: 15px;
+
+}
+#upper{
+    display: flex;
+    align-items:center;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 200px;
+    position: relative;
+    right: 480px;
+    bottom: 90px;
+    width: 600px;
+    padding: 50px;
+    background: #ffffff;
+    border-style: solid;
+    border-color: rgb(161, 166, 164);
+    box-shadow: 2px 2px 3px 0px rgb(178, 180, 179);
+    border-radius: 20px;
+    /* z-index: 0; */
+  
+}
+#upper img {
+    height: 60px;
+    width: 60px;
+    border-style:double;
+    border-radius: 15px;
+    padding: 10px;
+    transition: all .3s ease;
+}
+#upper img:hover{
+    transform: scale(1.1);
+}
+
+#image-preview{
+    height: auto;
+    width: 100%;
+    mix-blend-mode :lighten;
+    aspect-ratio: 1;
+    border-style: none;
+    box-shadow: 0px 0px 10px 10px rgb(255, 255, 255);
+
+}
+#use{
+    height: 40px;
+    width: 100px;
+    border-radius: 20px;
+    background: #007c61;
+    color: #fff;
+    font-weight: 600;
+    font-size: 15px;
+}
+.heart{
+    z-index: 2;
+    padding: 0px;
+    clip-path: path(var(--heart));
+    /* border-radius: 100%; */
+    /* box-shadow: inset  0px 0px 20px 20px rgb(255, 255, 255); */
+
+}
+.rect{
+    z-index: 2;
+    padding: 0px;
+    width: 350px;
+    height:200px;
+    border-radius: 18%;
+    box-shadow: inset  0px 0px 20px 20px rgb(255, 255, 255);
+}
+.square{
+    z-index: 2;
+    padding: 0px;
+    border-radius: 15%;
+    box-shadow: inset  0px 0px 20px 20px rgb(255, 255, 255);
+
+}
+.circle{
+    z-index: 2;
+    padding: 0px;
+    border-radius: 100%;
+    box-shadow: inset  0px 0px 20px 20px rgb(255, 255, 255);
+}
+.view{
+     z-index: 5;
+}
+.opa{
+    opacity: 1;
+}
+@media(max-width:500px) {
+    .container{
+        height: 100%;
+        width: 100%;
+        margin: 0px;
+    } 
+    .main{
+        justify-content:space-around;
+        position:  relative;
+        height:600px;
+        width: 100%;
+        overflow: hidden; 
+         left:-1px;
+         margin:0px;
+         /* margin-bottom: 50px; */
+    background-color: rgb(196, 244, 226);
+
+    }
+    .main-upper{
+        height: 150px;
+        width: 300px;
+        left: 2px; 
+         right: 190px;
+         font-size: 12px;
+         top:20px
+    } 
+    .main-lower{
+        position: relative;
+        top: 0px;
+        right: 0px;
+        left: 15px;
+        margin-bottom: 50px;
+
+    } 
+     #upper{
+        left: 85px;
+        flex-direction: column;
+        height: 210px;
+        width: 100px;
+        top: 100px;
+       position: absolute;
+        margin:0;
+        padding-top: 10px;
+    } 
+    #upper img{
+        height: 50px;
+        width: 50px;
+    }  
+    h2{
+        left: 0px;
+    }
+    
+}

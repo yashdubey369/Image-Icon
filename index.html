@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Image Preview</title>
+   <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header><span class="top"><i>Add Image/Icon</i> </span></header>
+    <hr>
+<div class="container">
+    <div class="main"> 
+        <div class="main-upper">
+            <h1>Upload Image</h1>
+            <input type="file" id="image-input" accept="image/*">
+             <br>
+        </div>
+        
+        <div id="main-lower"> 
+            <img  id="image-preview" src="#" alt="preview">
+        </div>
+    </div>
+       
+    <div  id="upper">
+        <span id="heart-btn"><img src="images/user_image_frame_1.png" alt="">1. </span>
+        <span id="square-btn"><img src="images/user_image_frame_2.png" alt="">2.</span>
+        <span id="circle-btn"><img src="images/user_image_frame_3.png" alt=""> 3. </span>
+        <span id="rect-btn"><img src="images/user_image_frame_4.png" alt="">4.</span>
+        <button id="use" type="submit">Use this</button>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
